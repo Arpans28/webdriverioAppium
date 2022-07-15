@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Jul 14 17:00:55 IST 2022","Thu Jul 14 17:01:19 IST 2022","24222","","Settings test cases","","Settings test cases","Verify Adjust volume checkbox uncheck","Verify Adjust volume checkbox uncheck",""
+"passed","Thu Jul 14 17:00:45 IST 2022","Thu Jul 14 17:00:55 IST 2022","9603","","Settings test cases","","Settings test cases","List all submenus","List all submenus",""
+"passed","Thu Jul 14 17:01:19 IST 2022","Thu Jul 14 17:01:39 IST 2022","19871","","Settings test cases","","Settings test cases","Create speaker group","Create speaker group",""
+"passed","Thu Jul 14 17:00:40 IST 2022","Thu Jul 14 17:00:45 IST 2022","5134","","Settings test cases","","Settings test cases","Navigate to settings","Navigate to settings",""
+"passed","Thu Jul 14 17:01:39 IST 2022","Thu Jul 14 17:01:53 IST 2022","14259","","Settings test cases","","Settings test cases","Delete speaker group","Delete speaker group",""

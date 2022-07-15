@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1657891773218' stop='1657891780982'>
+    <name>Settings test cases</name>
+    <title>Settings test cases</title>
+    <test-cases>
+        <test-case start='1657891773219' status='broken' stop='1657891780982'>
+            <name>Verify Adjust volume checkbox uncheck</name>
+            <title>Verify Adjust volume checkbox uncheck</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps>
+                <step start='1657891773219' status='passed' stop='1657891773219'>
+                    <name>Tap on settings</name>
+                    <title>Tap on settings</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657891778276' status='passed' stop='1657891778276'>
+                    <name>Verify settings page is displayed</name>
+                    <title>Verify settings page is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657891779954' status='passed' stop='1657891779954'>
+                    <name>Scroll to Advanced Settings</name>
+                    <title>Scroll to Advanced Settings</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='b4ac9bb1-f707-4606-87e2-521ce4411023-attachment.png' type='image/png' size='137033'/>
+            </attachments>
+            <failure>
+                <message>_utils.default.scrollToEnd is not a function</message>
+                <stack-trace>TypeError: _utils.default.scrollToEnd is not a function
+                    at Context.&lt;anonymous> (D:\webdriveriodemo\test\specs\/Settingsspec.js:63:21)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

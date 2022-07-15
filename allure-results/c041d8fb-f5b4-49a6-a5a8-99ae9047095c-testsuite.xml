@@ -1,0 +1,276 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1657798240640' stop='1657798313731'>
+    <name>Settings test cases</name>
+    <title>Settings test cases</title>
+    <test-cases>
+        <test-case start='1657798240640' status='passed' stop='1657798245774'>
+            <name>Navigate to settings</name>
+            <title>Navigate to settings</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps>
+                <step start='1657798240641' status='passed' stop='1657798240641'>
+                    <name>Tap on Settings icon</name>
+                    <title>Tap on Settings icon</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798242399' status='passed' stop='1657798242399'>
+                    <name>Verify Settings page is displayed</name>
+                    <title>Verify Settings page is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1657798245774' status='passed' stop='1657798255377'>
+            <name>List all submenus</name>
+            <title>List all submenus</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps>
+                <step start='1657798245776' status='passed' stop='1657798245776'>
+                    <name>Tap on Settings icon</name>
+                    <title>Tap on Settings icon</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798255377' status='passed' stop='1657798255377'>
+                    <name>List all visible Menus</name>
+                    <title>List all visible Menus</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798255377' status='passed' stop='1657798255377'>
+                    <name>Visible otptions areSettings,SETUP,Setup Play-Fi Device,Rename,Music Services,Hardware Presets,GROUPS,Speaker Groups,Spotify Groups,Stereo Pairs,Home Theater,VOICE SERVICES &amp; CONTROLLERS</name>
+                    <title>Visible otptions areSettings,SETUP,Setup Play-Fi Device,Rename,Music Services,Hardware Presets,GROUPS,Speaker Groups,Spotify Groups,Stereo Pairs,Home Theater,VOICE SERVICES &amp; CONTROLLERS</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1657798255378' status='failed' stop='1657798279600'>
+            <name>Verify Adjust volume checkbox uncheck</name>
+            <title>Verify Adjust volume checkbox uncheck</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps>
+                <step start='1657798255378' status='passed' stop='1657798255378'>
+                    <name>Tap on settings</name>
+                    <title>Tap on settings</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798262139' status='passed' stop='1657798262139'>
+                    <name>Verify settings page is displayed</name>
+                    <title>Verify settings page is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798263961' status='passed' stop='1657798263961'>
+                    <name>Scroll to Advanced Settings</name>
+                    <title>Scroll to Advanced Settings</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798265293' status='passed' stop='1657798265293'>
+                    <name>Tap on Advanced settings</name>
+                    <title>Tap on Advanced settings</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798266814' status='passed' stop='1657798266815'>
+                    <name>Verify Advanced settings page is displayed</name>
+                    <title>Verify Advanced settings page is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798267210' status='passed' stop='1657798267210'>
+                    <name>Tap on checkbox to uncheck</name>
+                    <title>Tap on checkbox to uncheck</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798267538' status='passed' stop='1657798267538'>
+                    <name>Verify Checkbox is unchecked</name>
+                    <title>Verify Checkbox is unchecked</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='a71bfbdb-2eb2-4522-acc5-d787f4dfef21-attachment.png' type='image/png' size='229916'/>
+            </attachments>
+            <failure>
+                <message>Expect $(`//android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.CheckBox[1]`) to have attribute checked
+                
+                Expected: "false"
+                Received: "true"</message>
+                <stack-trace>Error: Expect $(`//android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.CheckBox[1]`) to have attribute checked
+                
+                Expected: "false"
+                Received: "true"
+                    at Context.&lt;anonymous> (D:\webdriveriodemo\test\specs\/Settingsspec.js:77:48)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1657798279600' status='passed' stop='1657798299471'>
+            <name>Create speaker group</name>
+            <title>Create speaker group</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps>
+                <step start='1657798279601' status='passed' stop='1657798279601'>
+                    <name>Tap on Settings</name>
+                    <title>Tap on Settings</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798287241' status='passed' stop='1657798287241'>
+                    <name>Verify settings page is displayed</name>
+                    <title>Verify settings page is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798289121' status='passed' stop='1657798289121'>
+                    <name>Select Speaker groups</name>
+                    <title>Select Speaker groups</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798290935' status='passed' stop='1657798290935'>
+                    <name>Verify speaker group page is displayed</name>
+                    <title>Verify speaker group page is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798291043' status='passed' stop='1657798291043'>
+                    <name>Tap on add group button</name>
+                    <title>Tap on add group button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798291166' status='passed' stop='1657798291166'>
+                    <name>Verify textbox is displayed</name>
+                    <title>Verify textbox is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798292297' status='passed' stop='1657798292297'>
+                    <name>Enter a group name in textbox</name>
+                    <title>Enter a group name in textbox</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798293256' status='passed' stop='1657798293256'>
+                    <name>Hit Enter button</name>
+                    <title>Hit Enter button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798294291' status='passed' stop='1657798294291'>
+                    <name>Select speakers to be added in group</name>
+                    <title>Select speakers to be added in group</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798297239' status='passed' stop='1657798297239'>
+                    <name>Tap on Done button</name>
+                    <title>Tap on Done button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798297987' status='passed' stop='1657798297987'>
+                    <name>Verify created group is displayed</name>
+                    <title>Verify created group is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1657798299471' status='passed' stop='1657798313730'>
+            <name>Delete speaker group</name>
+            <title>Delete speaker group</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps>
+                <step start='1657798299472' status='passed' stop='1657798299472'>
+                    <name>Tap on Settings</name>
+                    <title>Tap on Settings</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798305956' status='passed' stop='1657798305956'>
+                    <name>Verify settings page is displayed</name>
+                    <title>Verify settings page is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798308000' status='passed' stop='1657798308000'>
+                    <name>Select Speaker groups</name>
+                    <title>Select Speaker groups</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798310017' status='passed' stop='1657798310017'>
+                    <name>Tap on Group context menu</name>
+                    <title>Tap on Group context menu</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798310681' status='passed' stop='1657798310681'>
+                    <name>Select Delete option</name>
+                    <title>Select Delete option</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798312313' status='passed' stop='1657798312313'>
+                    <name>Tap on Confirm Delete button</name>
+                    <title>Tap on Confirm Delete button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1657798312505' status='passed' stop='1657798312505'>
+                    <name>Verify there are no speaker groups text is displayed</name>
+                    <title>Verify there are no speaker groups text is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
