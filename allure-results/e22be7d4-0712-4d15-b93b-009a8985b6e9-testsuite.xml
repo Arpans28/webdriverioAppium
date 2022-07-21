@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658321041333' stop='1658321065538'>
+    <name>Deezer sanity test cases</name>
+    <title>Deezer sanity test cases</title>
+    <test-cases>
+        <test-case start='1658321041334' status='failed' stop='1658321065536'>
+            <name>Chart nagigate to different tabs</name>
+            <title>Chart nagigate to different tabs</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect $(`//android.widget.TextView[@text="Flow"]`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"</message>
+                <stack-trace>Error: Expect $(`//android.widget.TextView[@text="Flow"]`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"
+                    at Context.&lt;anonymous> (C:\Users\Arpan Sharma\Documents\webdriveriotest\test\specs\/Deezerspecs.js:140:35)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

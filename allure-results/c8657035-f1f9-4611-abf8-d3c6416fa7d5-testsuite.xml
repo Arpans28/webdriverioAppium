@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658321217257' stop='1658321241347'>
+    <name>Deezer sanity test cases</name>
+    <title>Deezer sanity test cases</title>
+    <test-cases>
+        <test-case start='1658321217258' status='broken' stop='1658321241345'>
+            <name>Chart nagigate to different tabs</name>
+            <title>Chart nagigate to different tabs</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>The selector "new UiScrollable(new UiSelector().scrollable(true)).swipeLeft(1)" used with strategy "-android uiautomator" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "new UiScrollable(new UiSelector().scrollable(true)).swipeLeft(1)" used with strategy "-android uiautomator" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at getErrorFromResponseBody (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at Browser.wrapCommandFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Browser.$ (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\webdriverio\build\commands\browser\$.js:91:17)
+                    at Browser.wrapCommandFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Context.&lt;anonymous> (C:\Users\Arpan Sharma\Documents\webdriveriotest\test\specs\/Deezerspecs.js:144:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

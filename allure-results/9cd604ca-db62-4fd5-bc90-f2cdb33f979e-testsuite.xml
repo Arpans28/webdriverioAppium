@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658396787816' stop='1658396803002'>
+    <name>Deezer sanity test cases</name>
+    <title>Deezer sanity test cases</title>
+    <test-cases>
+        <test-case start='1658396787817' status='broken' stop='1658396803001'>
+            <name>Chart nagigate to different tabs</name>
+            <title>Chart nagigate to different tabs</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>The element 'By.xpath: //android.widget.TextView[@text="Arpan"]' is not linked to the same object in DOM anymore</message>
+                <stack-trace>stale element reference: The element 'By.xpath: //android.widget.TextView[@text="Arpan"]' is not linked to the same object in DOM anymore
+                    at getErrorFromResponseBody (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at Element.wrapCommandFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.wrapCommandFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\webdriverio\build\middlewares.js:44:28)
+                    at Element.wrapCommandFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.wrapCommandFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\webdriverio\build\middlewares.js:44:28)
+                    at Element.wrapCommandFn (C:\Users\Arpan Sharma\Documents\webdriveriotest\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

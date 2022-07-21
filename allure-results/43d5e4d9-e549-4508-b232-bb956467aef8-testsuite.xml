@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658398482104' stop='1658398514448'>
+    <name>Deezer sanity test cases</name>
+    <title>Deezer sanity test cases</title>
+    <test-cases>
+        <test-case start='1658398482105' status='passed' stop='1658398514447'>
+            <name>Chart nagigate to different tabs</name>
+            <title>Chart nagigate to different tabs</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

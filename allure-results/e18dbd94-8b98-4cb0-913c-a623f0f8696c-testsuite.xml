@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658397440102' stop='1658397460086'>
+    <name>Deezer sanity test cases</name>
+    <title>Deezer sanity test cases</title>
+    <test-cases>
+        <test-case start='1658397440102' status='broken' stop='1658397460085'>
+            <name>Chart nagigate to different tabs</name>
+            <title>Chart nagigate to different tabs</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>_Deezerobj.default.swipeLeft is not a function</message>
+                <stack-trace>TypeError: _Deezerobj.default.swipeLeft is not a function
+                    at Context.&lt;anonymous> (C:\Users\Arpan Sharma\Documents\webdriveriotest\test\specs\/Deezerspecs.js:144:22)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

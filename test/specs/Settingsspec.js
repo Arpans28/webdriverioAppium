@@ -1,12 +1,14 @@
 
 import Settings from '../pageobjects/android/Settings';
+import {scrollToBottom} from '../utils/utils';
+import {scrollToElement} from '../utils/utils';
 
 const assert = require('assert');
 import allureReporter from '@wdio/allure-reporter';
 
 describe('Settings test cases', ()=> {
    
-    it('Navigate to settings',async ()=> {
+    it('Navigate to settings', async ()=> {
 
         allureReporter.addStep('Tap on Settings icon')
         //Tap on settings
@@ -15,14 +17,12 @@ describe('Settings test cases', ()=> {
         allureReporter.addStep('Verify Settings page is displayed')
         //Assert Setup text is displayed
         await expect (Settings.setupdevice).toBeDisplayed();
-        
     })
 
 
 
     
     it ('List all submenus', async ()=>{
-        driver.launchApp();
         
         driver.setImplicitTimeout(2000);
         const actuallist=[]
@@ -46,8 +46,7 @@ describe('Settings test cases', ()=> {
         allureReporter.addStep('Visible otptions are'+ actuallist)
     })
 
-    it.only ('Verify Adjust volume checkbox uncheck', async ()=>{
-       //driver.launchApp();
+    it ('Verify Adjust volume checkbox uncheck', async ()=>{
         
         allureReporter.addStep('Tap on settings')
         //tap on settings
@@ -59,7 +58,8 @@ describe('Settings test cases', ()=> {
 
         allureReporter.addStep('Scroll to Advanced Settings')
         //Scroll to advanced settings
-        await Settings.scrolltoEnd;
+        await scrollToElement('Advanced Settings');
+       
 
         allureReporter.addStep('Tap on Advanced settings')
         //tap on advanced settings
@@ -79,7 +79,6 @@ describe('Settings test cases', ()=> {
     })
 
     it ('Create speaker group', async()=>{
-        driver.launchApp();
         
         allureReporter.addStep('Tap on Settings')
         //tap on settings
@@ -135,8 +134,6 @@ describe('Settings test cases', ()=> {
         
     it ('Delete speaker group', async()=>{
         
-        driver.launchApp();
-        
         allureReporter.addStep('Tap on Settings')
         //tap on settings
         await Settings.settingsbtn.click();
@@ -168,5 +165,72 @@ describe('Settings test cases', ()=> {
         const expected= 'CREATE A SPEAKER GROUP BY PRESSING THE ADD GROUP BUTTON BELOW.';
         assert.equal(msg,expected);
     
+    })
+
+    it.only ('Create Max speaker group', async()=>{
+        
+        allureReporter.addStep('Tap on Settings')
+            //tap on settings
+            await Settings.settingsbtn.click();
+    
+            allureReporter.addStep('Verify settings page is displayed')
+            //assert for settings
+            await expect (Settings.setupdevice).toBeDisplayed();
+    
+            allureReporter.addStep('Select Speaker groups')
+            //tap on Spekaer grps
+            await Settings.speakerGrouptext.click();
+    
+            allureReporter.addStep('Verify speaker group page is displayed')
+            //assert for group page
+            await expect (Settings.creategrpbtn).toBeDisplayed();
+    
+
+        let i=0, maxgrp=20;
+        while (i<=maxgrp){
+
+            if (i==20){
+                allureReporter.addStep('Tap on add group button')
+                //tap on create btn
+                await Settings.creategrpbtn.click();
+
+                //verify Max group popup is displayed
+                await expect(Settings.maxGrpovrlay).toBeDisplayed();
+
+                //tap on OK button to minize max group popup
+                await Settings.maxGrpovrlay.click();
+                break;
+
+            }
+            
+            allureReporter.addStep('Tap on add group button')
+            //tap on create btn
+            await Settings.creategrpbtn.click();
+    
+            allureReporter.addStep('Verify textbox is displayed')
+            //assert textbox
+            await expect (Settings.grpName).toBeDisplayed();
+            
+            allureReporter.addStep('Enter a group name in textbox')
+            //add grp name
+            await Settings.grpName.addValue(i);// setValue
+    
+            allureReporter.addStep('Hit Enter button')
+            //tap enter
+            await driver.pressKeyCode(66); 
+    
+            allureReporter.addStep('Select speakers to be added in group')
+            //select speakers
+            await Settings.speakerOne.click();
+            await Settings.speakerTwo.click();
+    
+            allureReporter.addStep('Tap on Done button')
+            //tap done
+            await Settings.speakerDonebtn.click();
+
+            i++;
+            }
+        
+
     })
 })

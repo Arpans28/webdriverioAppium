@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658310362479' stop='1658310399055'>
+    <name>Deezer sanity test cases</name>
+    <title>Deezer sanity test cases</title>
+    <test-cases>
+        <test-case start='1658310362480' status='failed' stop='1658310399052'>
+            <name>Show password checkbox functionality</name>
+            <title>Show password checkbox functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='ZF6222459K-9'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect $(`id=com.phorus.playfi:id/sign_in_password_checkbox`) to be checked
+                
+                Expected: "checked"
+                Received: "not checked"</message>
+                <stack-trace>Error: Expect $(`id=com.phorus.playfi:id/sign_in_password_checkbox`) to be checked
+                
+                Expected: "checked"
+                Received: "not checked"
+                    at Context.&lt;anonymous> (C:\Users\Arpan Sharma\Documents\webdriveriotest\test\specs\/Deezerspecs.js:78:45)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

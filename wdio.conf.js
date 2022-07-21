@@ -149,7 +149,7 @@ exports.config = {
     reporters: [['allure', {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: false,
+        disableWebdriverScreenshotsReporting: true,
     }]],
 
 
@@ -159,7 +159,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 300000
     },
     //
     // =====
@@ -231,8 +231,9 @@ exports.config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    // beforeTest: function (test, context) {
-    // },
+    beforeTest: function (test, context) {
+       // driver.launchApp();
+    },
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)
@@ -259,7 +260,7 @@ exports.config = {
         if (error) {
             await driver.takeScreenshot();
     }
-
+        driver.closeApp();
 
     /**
      * Hook that gets executed after the suite has ended
