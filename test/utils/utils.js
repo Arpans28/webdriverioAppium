@@ -13,8 +13,8 @@ export function scrollToElement(text){
     return elm;
 }
 
-//Swipe Left 
-export function swipeLeft(text){
+//Scroll Left 
+export function scrollLeft(text){
     var text;
     const elm=  $(`android=new UiScrollable(new UiSelector().scrollable(true)).setAsHorizontalList().scrollTextIntoView("${text}")`);
 
